@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodRescue.id</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/get-involved.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-seedling"></i></div>
+                <span class="logo-text">FOOD<span>RESCUE</span>.ID</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mitra.html">Mitra</a>
+                <a href="impact.html">Impact</a>
+                <a href="get-involved.html" class="active">Get Involved</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="mitra.html">Mitra</a>
+        <a href="impact.html">Impact</a>
+        <a href="get-involved.html" class="active">Get Involved</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+                <h1>Be the reason<br>of <span class="gradient-text">someone's smile</span></h1>
+                <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Bergabunglah bersama ribuan relawan dan mitra yang sudah menyelamatkan makanan</p>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+                <path d="M0 64L60 69.3C120 75 240 85 360 80C480 75 600 53 720 48C840 43 960 53 1080 58.7C1200 64 1320 64 1380 64L1440 64L1440 120L1380 120C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120L0 120Z" fill="#FFFFFF" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left" data-aos="fade-right" data-aos-duration="700">
+                    <h2>Become Part of <span class="gradient-text">The Movement</span></h2>
+                    <p class="tagline">Together we rescue food and create meaningful impact</p>
+                    <p>FoodRescue.id membuka kesempatan bagi relawan, komunitas, dan donatur untuk ikut berkontribusi dalam distribusi surplus makanan layak konsumsi kepada yang membutuhkan.</p>
+                    <div class="feature-list">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
+                            <div class="feature-icon"><i class="fas fa-heartbeat"></i></div>
+                            <div>
+                                <h4>Volunteer Network</h4>
+                                <p>Relawan membantu proses pengambilan dan distribusi makanan di berbagai kota.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <h4>Community Support</h4>
+                                <p>Yayasan dan komunitas dapat menerima bantuan makanan secara lebih terorganisir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right" data-aos="fade-left" data-aos-duration="700">
+                    <div class="about-photo-grid">
+                        <div class="about-photo-card" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="500">
+                            <div class="about-photo-img photo-a"></div>
+                            <div class="about-photo-caption"><i class="fas fa-hands-helping"></i> Relawan siap membantu</div>
+                        </div>
+                        <div class="about-photo-card" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500">
+                            <div class="about-photo-img photo-b"></div>
+                            <div class="about-photo-caption"><i class="fas fa-smile"></i> Senyum penerima manfaat</div>
+                        </div>
+                        <div class="about-photo-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="500">
+                            <div class="about-photo-img photo-c"></div>
+                            <div class="about-photo-caption"><i class="fas fa-box-open"></i> Penyerahan bantuan</div>
+                        </div>
+                        <div class="about-photo-card" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500">
+                            <div class="about-photo-img photo-d"></div>
+                            <div class="about-photo-caption"><i class="fas fa-truck"></i> Distribusi makanan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOKUMENTASI SECTION -->
+    <section class="documentation-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+                <h2>Kegiatan <span class="gradient-text">Kami</span></h2>
+                <p>Momen nyata penyelamatan dan penyaluran makanan</p>
+            </div>
+            <div class="documentation-grid">
+                <div class="doc-card" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="600">
+                    <div class="doc-image doc-image-1">
+                        <div class="doc-overlay"><span><i class="fas fa-truck"></i> Pickup Mission</span></div>
+                    </div>
+                    <div class="doc-content">
+                        <h3>Relawan Mengantar Makanan</h3>
+                        <p>40 paket makanan diantar ke Panti Asuhan Harapan.</p>
+                        <div class="doc-meta">
+                            <span><i class="fas fa-calendar"></i> 15 Maret 2024</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-card" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="600">
+                    <div class="doc-image doc-image-2">
+                        <div class="doc-overlay"><span><i class="fas fa-hand-holding-heart"></i> Distribution</span></div>
+                    </div>
+                    <div class="doc-content">
+                        <h3>Pembagian Makanan</h3>
+                        <p>120 porsi makanan didistribusikan ke komunitas.</p>
+                        <div class="doc-meta">
+                            <span><i class="fas fa-calendar"></i> 22 Maret 2024</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-card" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
+                    <div class="doc-image doc-image-3">
+                        <div class="doc-overlay"><span><i class="fas fa-smile"></i> Happy Recipients</span></div>
+                    </div>
+                    <div class="doc-content">
+                        <h3>Masyarakat Menerima Bantuan</h3>
+                        <p>Warga menerima makanan dengan penuh syukur.</p>
+                        <div class="doc-meta">
+                            <span><i class="fas fa-calendar"></i> 28 Maret 2024</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Bandung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="form-section" id="roleFormSection">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+                <h2>Pilih <span class="gradient-text">Peran Anda</span></h2>
+                <p>Jadi relawan atau daftarkan komunitas Anda</p>
+            </div>
+
+            <div class="form-row-top">
+                <div class="role-card" data-aos="fade-right" data-aos-duration="700" data-aos-delay="0">
+                    <div class="role-header">
+                        <div class="role-icon"><i class="fas fa-hand-peace"></i></div>
+                        <div>
+                            <h3>Daftar Jadi Relawan</h3>
+                            <p>Bantu antar makanan ke komunitas yang membutuhkan</p>
+                        </div>
+                    </div>
+                    <form id="volunteerForm">
+                        <div class="input-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" placeholder="Contoh: Budi Santoso" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Nomor Telepon</label>
+                                <input type="tel" placeholder="0812-3456-7890" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="budi@email.com" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Alamat Domisili</label>
+                            <input type="text" placeholder="Jl. Contoh No. 123, Jakarta" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Ketersediaan Waktu</label>
+                                <select required>
+                                    <option>Weekday (Senin-Jumat)</option>
+                                    <option>Weekend (Sabtu-Minggu)</option>
+                                    <option>Flexible</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Kendaraan</label>
+                                <select required>
+                                    <option>Motor</option>
+                                    <option>Mobil</option>
+                                    <option>Sepeda</option>
+                                    <option>Jalan Kaki</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Daftar Relawan</button>
+                    </form>
+                </div>
+
+                <div class="role-card" data-aos="fade-left" data-aos-duration="700" data-aos-delay="0">
+                    <div class="role-header">
+                        <div class="role-icon"><i class="fas fa-building"></i></div>
+                        <div>
+                            <h3>Pengajuan Komunitas</h3>
+                            <p>Daftarkan yayasan/panti/komunitas sebagai penerima manfaat</p>
+                        </div>
+                    </div>
+                    <form id="communityForm">
+                        <div class="input-group">
+                            <label>Nama Yayasan / Panti / Komunitas</label>
+                            <input type="text" placeholder="Contoh: Panti Asuhan Harapan" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Nomor Kontak</label>
+                                <input type="tel" placeholder="0812-3456-7890" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="kontak@yayasan.com" required>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Alamat Lengkap</label>
+                            <input type="text" placeholder="Jl. Contoh No. 123, Jakarta" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Jumlah Penerima</label>
+                                <input type="number" placeholder="50 orang" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Kategori</label>
+                                <select required>
+                                    <option>Panti Asuhan</option>
+                                    <option>Panti Lansia</option>
+                                    <option>Dapur Umum</option>
+                                    <option>Komunitas Binaan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Ajukan Komunitas</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="form-row-bottom">
+                <div class="donation-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                    <div class="donation-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Donasi Sekarang</h3>
+                    <p>Donasi Anda sangat berarti untuk program kami</p>
+                    <div class="input-prefix">
+                        <span class="currency">Rp</span>
+                        <input type="number" id="donationAmount" placeholder="Masukkan nominal donasi" min="10000" step="5000" value="25000">
+                    </div>
+                    <button class="donate-btn" id="donateBtn">
+                        <i class="fas fa-paper-plane"></i> Donasi Sekarang
+                    </button>
+                    <div id="donationMessage" class="donation-message" style="display: none;"></div>
+                </div>
+
+                <div class="slider-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <div class="slider-container">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slider-slide">
+                                <div class="slide-image slide-1"></div>
+                                <div class="slide-caption">Bukti nyata setiap porsi yang diselamatkan menjadi energi bagi sesama.</div>
+                            </div>
+                            <div class="slider-slide">
+                                <div class="slide-image slide-2"></div>
+                                <div class="slide-caption">Pembagian makanan ke komunitas sekitar Jakarta</div>
+                            </div>
+                            <div class="slider-slide">
+                                <div class="slide-image slide-3"></div>
+                                <div class="slide-caption">Warga menerima bantuan dengan senyum bahagia</div>
+                            </div>
+                        </div>
+                        <button class="slider-btn slider-prev" id="sliderPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn slider-next" id="sliderNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-dots" id="sliderDots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+                <h2>Peta <span class="gradient-text">Distribusi</span> Makanan</h2>
+                <p>Pilih kota untuk melihat titik distribusi</p>
+            </div>
+            <div class="city-tabs" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                <button class="city-tab active" data-city="jakarta">Jakarta</button>
+                <button class="city-tab" data-city="bandung">Bandung</button>
+                <button class="city-tab" data-city="surabaya">Surabaya</button>
+                <button class="city-tab" data-city="semarang">Semarang</button>
+                <button class="city-tab" data-city="yogyakarta">Yogyakarta</button>
+                <button class="city-tab" data-city="denpasar">Denpasar</button>
+            </div>
+            <div class="map-container" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+                <div id="map" style="height: 400px; width: 100%; border-radius: 16px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon"><i class="fas fa-seedling"></i></div>
+                        <span class="logo-text">FOOD<span>RESCUE</span>.ID</span>
+                    </div>
+                    <p>Zero food waste. Zero hunger. Better future for Indonesia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <a href="index.html">Home</a>
+                    <a href="mitra.html">Mitra</a>
+                    <a href="#impact">Impact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Get Involved</h4>
+                    <a href="get-involved.html">Volunteer</a>
+                    <a href="get-involved.html">Register Yayasan</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 FoodRescue.id — Supporting SDG 12.3: Reduce Food Waste by 50% by 2030</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/get-involved.js"></script>
+</body>
+
+</html>

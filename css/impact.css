@@ -1,0 +1,884 @@
+/* ============================================ */
+/* IMPACT PAGE - HERO SECTION
+/* ============================================ */
+.impact-hero {
+    padding: 160px 0 120px;
+    text-align: center;
+    background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 70%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.impact-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -20%;
+    width: 60%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.impact-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge-impact {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    padding: 8px 20px;
+    border-radius: 60px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.hero-badge-impact i {
+    color: #14B8A6;
+}
+
+.hero-badge-impact span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #14B8A6;
+}
+
+.impact-hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.impact-hero-content p {
+    font-size: 18px;
+    color: #64748B;
+    max-width: 600px;
+    margin: 0 auto 24px;
+}
+
+.hero-stats-mini {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+
+.hero-stat {
+    text-align: center;
+}
+
+.hero-stat-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1E293B;
+    display: block;
+    line-height: 1.2;
+}
+
+.hero-stat-label {
+    font-size: 13px;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.hero-wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+    line-height: 0;
+}
+
+.hero-wave-bottom svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ============================================ */
+/* IMPACT FLOW SECTION
+/* ============================================ */
+.impact-flow-section {
+    padding: 80px 0;
+    background: #FFFFFF;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1E293B;
+    text-transform: uppercase;
+    background: #F1F5F9;
+    padding: 5px 14px;
+    border-radius: 100px;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.impact-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.flow-step {
+    flex: 1;
+    text-align: center;
+    background: #FFFFFF;
+    padding: 28px 20px;
+    border-radius: 28px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    border: 1px solid #E2E8F0;
+}
+
+.flow-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+    border-color: #CBD5E1;
+}
+
+.flow-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #1E293B, #334155);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.flow-icon i {
+    font-size: 32px;
+    color: white;
+}
+
+.flow-step h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #0F172A;
+}
+
+.flow-step p {
+    font-size: 12px;
+    color: #64748B;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.flow-number {
+    font-size: 28px;
+    font-weight: 800;
+    color: #64748B;
+    background: #F1F5F9;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+}
+
+.flow-arrow {
+    font-size: 28px;
+    color: #CBD5E1;
+}
+
+
+/* ============================================ */
+/* IMPACT GALLERY SECTION
+/* ============================================ */
+.impact-gallery-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.gallery-card {
+    background: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 20px;
+    color: white;
+}
+
+.gallery-overlay span {
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.gallery-info {
+    padding: 16px 20px 20px;
+}
+
+.gallery-info h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.gallery-info p {
+    font-size: 12px;
+    color: #64748B;
+}
+
+.gallery-image-1 {
+    background-image: url('../img/impact/impact1.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-image-2 {
+    background-image: url('../img/impact/impact2.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-image-3 {
+    background-image: url('../img/impact/impact3.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-image-4 {
+    background-image: url('../img/impact/impact4.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-image-5 {
+    background-image: url('../img/impact/impact5.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-image-6 {
+    background-image: url('../img/impact/impact6.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ============================================ */
+/* ANNUAL REPORTS SECTION
+/* ============================================ */
+.annual-reports-section {
+    padding: 80px 0;
+    background: #F8FAFC;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.report-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #E2E8F0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.report-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+    border-color: #CBD5E1;
+}
+
+.report-card-header {
+    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+.report-year {
+    font-size: 36px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.report-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    color: #CBD5E1;
+    margin-top: 8px;
+}
+
+.report-card-body {
+    padding: 20px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.stat-row:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #64748B;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stat-label i {
+    width: 20px;
+    font-size: 12px;
+    color: #94A3B8;
+}
+
+.stat-value {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E293B;
+}
+
+.stat-value.highlight {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0F172A;
+}
+
+.progress-impact {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #E2E8F0;
+}
+
+.progress-label {
+    font-size: 10px;
+    color: #64748B;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    height: 6px;
+    background: #E2E8F0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #1E293B;
+    border-radius: 10px;
+    width: 0%;
+}
+
+.report-card-footer {
+    padding: 12px 20px;
+    background: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-btn {
+    background: none;
+    border: none;
+    color: #1E293B;
+    font-weight: 600;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+
+.download-btn:hover {
+    gap: 10px;
+    background: #F1F5F9;
+    color: #0F172A;
+}
+
+
+/* ============================================ */
+/* TESTIMONIAL SECTION
+/* ============================================ */
+.testimonial-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: #F8FAFC;
+    border-radius: 24px;
+    padding: 28px;
+    border: 1px solid #E2E8F0;
+}
+
+.testimonial-quote {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #64748B;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #0EA5E9, #14B8A6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.author-name {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.author-role {
+    font-size: 11px;
+    color: #64748B;
+}
+
+/* ============================================ */
+/* RESPONSIVE 
+/* ============================================ */
+
+@media (max-width: 1024px) {
+    .impact-hero {
+        padding: 140px 0 100px;
+    }
+
+    .impact-hero-content h1 {
+        font-size: 44px;
+    }
+
+    .section-header h2 {
+        font-size: 30px;
+    }
+
+    .reports-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ── Tablet Portrait (max-width: 768px) ── */
+@media (max-width: 768px) {
+    .impact-hero-content {
+        padding: 0 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .impact-hero-content h1 {
+        word-break: break-word;
+    }
+
+    .hero-stats-mini {
+        padding: 0 8px;
+    }
+
+    .hero-badge-impact {
+        max-width: 100%;
+    }
+
+    .impact-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .impact-hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-stats-mini {
+        gap: 24px;
+        margin: 24px 0;
+    }
+
+    .hero-stat-number {
+        font-size: 26px;
+    }
+
+    .hero-stat-label {
+        font-size: 11px;
+    }
+
+    .section-header {
+        margin-bottom: 32px;
+    }
+
+    .section-header h2 {
+        font-size: 26px;
+    }
+
+    .impact-flow-section {
+        padding: 60px 0;
+    }
+
+    .impact-flow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flow-step {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+        font-size: 22px;
+        margin: -4px 0;
+    }
+
+    .impact-gallery-section {
+        padding: 60px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+
+    .testimonial-section {
+        padding: 60px 0;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .annual-reports-section {
+        padding: 60px 0;
+    }
+
+    .reports-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+/* ── Mobile (max-width: 576px) ── */
+@media (max-width: 576px) {
+    .impact-hero {
+        padding: 100px 0 70px;
+    }
+
+    .impact-hero-content h1 {
+        font-size: 26px;
+    }
+
+    .impact-hero-content p {
+        font-size: 13px;
+    }
+
+    .hero-badge-impact {
+        padding: 6px 14px;
+    }
+
+    .hero-badge-impact span {
+        font-size: 12px;
+    }
+
+    .hero-stats-mini {
+        gap: 16px;
+    }
+
+    .hero-stat-number {
+        font-size: 22px;
+    }
+
+    .hero-stat-label {
+        font-size: 10px;
+    }
+
+    .section-header h2 {
+        font-size: 22px;
+    }
+
+    .section-header p {
+        font-size: 13px;
+    }
+
+    .impact-flow-section {
+        padding: 48px 0;
+    }
+
+    .flow-step {
+        max-width: 100%;
+        padding: 20px 16px;
+    }
+
+    .flow-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 20px;
+    }
+
+    .flow-icon i {
+        font-size: 24px;
+    }
+
+    .flow-step h3 {
+        font-size: 16px;
+    }
+
+    .flow-step p {
+        font-size: 11px;
+    }
+
+    .flow-number {
+        font-size: 22px;
+    }
+
+    .impact-gallery-section {
+        padding: 48px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .gallery-image {
+        height: 220px;
+    }
+
+    .gallery-info h4 {
+        font-size: 15px;
+    }
+
+    .testimonial-section {
+        padding: 48px 0;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-quote {
+        font-size: 13px;
+    }
+
+    .author-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .author-name {
+        font-size: 13px;
+    }
+
+    .annual-reports-section {
+        padding: 48px 0;
+    }
+
+    .reports-grid {
+        grid-template-columns: 1fr;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .report-year {
+        font-size: 30px;
+    }
+
+    .report-card-body {
+        padding: 16px;
+    }
+
+    .stat-value.highlight {
+        font-size: 16px;
+    }
+}
+
+/* ── Mobile Kecil (max-width: 375px) ── */
+@media (max-width: 375px) {
+    .impact-hero-content h1 {
+        font-size: 22px;
+    }
+
+    .hero-stat-number {
+        font-size: 18px;
+    }
+
+    .section-header h2 {
+        font-size: 20px;
+    }
+
+    .gallery-image {
+        height: 190px;
+    }
+
+    .reports-grid {
+        max-width: 100%;
+    }
+}
+
+/* ── Landscape Orientation Mobile ── */
+@media (max-width: 768px) and (orientation: landscape) {
+    .impact-hero {
+        padding: 100px 0 60px;
+    }
+
+    .impact-flow {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flow-step {
+        flex: 1;
+        min-width: 160px;
+        max-width: none;
+    }
+
+    .flow-arrow {
+        transform: none;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reports-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Touch Device*/
+@media (hover: none) and (pointer: coarse) {
+    .flow-step:hover,
+    .gallery-card:hover,
+    .report-card:hover,
+    .testimonial-card:hover {
+        transform: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .download-btn:hover {
+        gap: 6px;
+        background: none;
+    }
+}
